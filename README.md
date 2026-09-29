@@ -1,10 +1,10 @@
 # jma-sarep-dvorak
 
-Fetch and decode **JMA RSMC Tokyo SAREP** bulletins — the Dvorak satellite
-intensity fixes JMA issues for active West Pacific tropical cyclones — straight
-from JMA's WIS2 node, in BUFR format.
+Fetch and decode **JMA RSMC Tokyo SAREP** bulletins,Dvorak satellite
+intensity fixes JMA issues for active West Pacific tropical cyclones 
+straight from JMA's WIS2 node, in BUFR format.
 
-Pure Python (no compiled BUFR libraries), so it runs on Windows, macOS and Linux.
+Pure Python, so it runs on Windows, macOS and Linux.
 
 ```
 Dolphin (2613)
@@ -49,7 +49,7 @@ asyncio.run(main())
 
 | Module | Role |
 |---|---|
-| `fetch.py` | Walks `SAREP/<YYYYMMDD>/<HHMMSS>/` on the WIS2 node and downloads the newest 00/06/12/18Z files (interim 03/09/15/21Z folders are skipped — they aren't full Dvorak cycles). |
+| `fetch.py` | Walks `SAREP/<YYYYMMDD>/<HHMMSS>/` on the WIS2 node and downloads the newest 00/06/12/18Z files (interim 03/09/15/21Z folders are skipped they aren't normally uploaded to public). |
 | `decode.py` | Decodes BUFR with `pybufrkit` and splits each subset into one record per storm. |
 | `format.py` | Renders a storm as plain-text forecaster shorthand. |
 
