@@ -1,0 +1,2 @@
+aiohttp>=3.8
+pybufrkit>=0.2.25
