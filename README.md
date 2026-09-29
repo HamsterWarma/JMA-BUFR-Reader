@@ -1,4 +1,3 @@
-# jma-sarep-dvorak
 
 Fetch and decode **JMA RSMC Tokyo SAREP** bulletins,Dvorak satellite
 intensity fixes JMA issues for active West Pacific tropical cyclones 
@@ -78,7 +77,7 @@ so far reported it as missing. If you capture a file with a real value, run
 
 ## Tests
 
-Offline — no connection to JMA needed:
+Offline, no connection to JMA needed:
 
 ```bash
 pip install pytest
@@ -89,4 +88,4 @@ pytest
 
 Bulletins are published by the Japan Meteorological Agency (RSMC Tokyo –
 Typhoon Center). This project is not affiliated with JMA. Dvorak fixes are
-for information only — use official warnings for any safety decisions.
+for information only. Use official warnings for any safety decisions.
